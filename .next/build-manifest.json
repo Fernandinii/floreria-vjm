@@ -7,14 +7,14 @@
     "static/chunks/0cz1d0mv5g_q7.js"
   ],
   "lowPriorityFiles": [
-    "static/VozKJAvIMUbQ_VJkDM9U9/_buildManifest.js",
-    "static/VozKJAvIMUbQ_VJkDM9U9/_ssgManifest.js",
-    "static/VozKJAvIMUbQ_VJkDM9U9/_clientMiddlewareManifest.js"
+    "static/YLuUv8aQgQkAbR04ks2F3/_buildManifest.js",
+    "static/YLuUv8aQgQkAbR04ks2F3/_ssgManifest.js",
+    "static/YLuUv8aQgQkAbR04ks2F3/_clientMiddlewareManifest.js"
   ],
   "rootMainFiles": [
     "static/chunks/2evgu094glu3w.js",
-    "static/chunks/21th5ud5rxlwx.js",
-    "static/chunks/2ki52vdnbo2ft.js",
+    "static/chunks/2-1y_l9ewaeat.js",
+    "static/chunks/3wbm-994r45kr.js",
     "static/chunks/turbopack-3-ry682tkyiqk.js"
   ],
   "rootMainFilesTree": {},
@@ -22,8 +22,8 @@
     "/page": {
       "otherChunks": [
         "static/chunks/2evgu094glu3w.js",
-        "static/chunks/21th5ud5rxlwx.js",
-        "static/chunks/2ki52vdnbo2ft.js"
+        "static/chunks/2-1y_l9ewaeat.js",
+        "static/chunks/3wbm-994r45kr.js"
       ],
       "runtimeModuleIds": [
         94553
@@ -32,8 +32,8 @@
     "/_not-found/page": {
       "otherChunks": [
         "static/chunks/2evgu094glu3w.js",
-        "static/chunks/21th5ud5rxlwx.js",
-        "static/chunks/2ki52vdnbo2ft.js"
+        "static/chunks/2-1y_l9ewaeat.js",
+        "static/chunks/3wbm-994r45kr.js"
       ],
       "runtimeModuleIds": [
         94553
@@ -42,8 +42,8 @@
     "/_global-error/page": {
       "otherChunks": [
         "static/chunks/2evgu094glu3w.js",
-        "static/chunks/21th5ud5rxlwx.js",
-        "static/chunks/2ki52vdnbo2ft.js"
+        "static/chunks/2-1y_l9ewaeat.js",
+        "static/chunks/3wbm-994r45kr.js"
       ],
       "runtimeModuleIds": [
         94553
@@ -52,8 +52,8 @@
     "/admin/dashboard/page": {
       "otherChunks": [
         "static/chunks/2evgu094glu3w.js",
-        "static/chunks/21th5ud5rxlwx.js",
-        "static/chunks/2ki52vdnbo2ft.js"
+        "static/chunks/2-1y_l9ewaeat.js",
+        "static/chunks/3wbm-994r45kr.js"
       ],
       "runtimeModuleIds": [
         94553
@@ -62,8 +62,8 @@
     "/admin/login/page": {
       "otherChunks": [
         "static/chunks/2evgu094glu3w.js",
-        "static/chunks/21th5ud5rxlwx.js",
-        "static/chunks/2ki52vdnbo2ft.js"
+        "static/chunks/2-1y_l9ewaeat.js",
+        "static/chunks/3wbm-994r45kr.js"
       ],
       "runtimeModuleIds": [
         94553

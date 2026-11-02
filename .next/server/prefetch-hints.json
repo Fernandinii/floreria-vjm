@@ -1,21 +1,21 @@
 {
   "/_global-error": {
-    "hints": 49216,
+    "hints": 64,
     "slots": {
       "children": {
-        "hints": 49312,
+        "hints": 160,
         "slots": null
       }
     }
   },
   "/_not-found": {
-    "hints": 49216,
+    "hints": 64,
     "slots": {
       "children": {
-        "hints": 49248,
+        "hints": 96,
         "slots": {
           "children": {
-            "hints": 49312,
+            "hints": 160,
             "slots": null
           }
         }
@@ -23,16 +23,16 @@
     }
   },
   "/admin/dashboard": {
-    "hints": 49216,
+    "hints": 64,
     "slots": {
       "children": {
-        "hints": 49248,
+        "hints": 96,
         "slots": {
           "children": {
-            "hints": 49248,
+            "hints": 96,
             "slots": {
               "children": {
-                "hints": 49312,
+                "hints": 160,
                 "slots": null
               }
             }
@@ -42,16 +42,16 @@
     }
   },
   "/admin/login": {
-    "hints": 49216,
+    "hints": 64,
     "slots": {
       "children": {
-        "hints": 49248,
+        "hints": 96,
         "slots": {
           "children": {
-            "hints": 49248,
+            "hints": 96,
             "slots": {
               "children": {
-                "hints": 49312,
+                "hints": 160,
                 "slots": null
               }
             }
@@ -61,10 +61,10 @@
     }
   },
   "/": {
-    "hints": 49216,
+    "hints": 64,
     "slots": {
       "children": {
-        "hints": 49312,
+        "hints": 160,
         "slots": null
       }
     }
