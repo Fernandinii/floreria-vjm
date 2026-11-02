@@ -18,17 +18,22 @@ export default function AdminLoginPage() {
     setLoading(true);
     setError(null);
 
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
+    try {
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
 
-    if (error) {
-      setError(error.message === 'Invalid login credentials' ? 'Correo o contraseña incorrectos' : error.message);
+      if (error) {
+        setError(error.message === 'Invalid login credentials' ? 'Correo o contraseña incorrectos' : error.message);
+        setLoading(false);
+      } else {
+        router.push('/admin/dashboard');
+        router.refresh();
+      }
+    } catch (err: any) {
+      setError(err?.message || 'Error de conexión. Inténtalo de nuevo.');
       setLoading(false);
-    } else {
-      router.push('/admin/dashboard');
-      router.refresh();
     }
   };
 
