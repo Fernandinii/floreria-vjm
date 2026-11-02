@@ -43,24 +43,6 @@ export async function middleware(request: NextRequest) {
       supabaseResponse.cookies.getAll().forEach((c) => response.cookies.set(c.name, c.value));
       return response;
     }
-
-    // Consultar el rol directamente en la tabla user_roles por id (auth.uid())
-    const { data: userRole } = await supabase
-      .from('user_roles')
-      .select('role')
-      .eq('id', user.id)
-      .single();
-
-    const allowedRoles = ['admin', 'superadmin'];
-
-    // Si el usuario no tiene rol permitido, rebotar al login
-    if (!userRole || !allowedRoles.includes(userRole.role)) {
-      const url = request.nextUrl.clone();
-      url.pathname = '/admin/login';
-      const response = NextResponse.redirect(url);
-      supabaseResponse.cookies.getAll().forEach((c) => response.cookies.set(c.name, c.value));
-      return response;
-    }
   }
 
   // Si ya inició sesión y visita /admin/login, redirigir al dashboard
