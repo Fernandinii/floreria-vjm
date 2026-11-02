@@ -628,64 +628,60 @@ export default function AdminDashboardPage() {
             <Tag className="w-4 h-4" /> Productos ({products.length})
           </button>
 
-          <button
-            onClick={() => setActiveTab('categories')}
-            className={`pb-3 font-bold text-sm border-b-2 transition flex items-center gap-2 whitespace-nowrap ${
-              activeTab === 'categories'
-                ? 'border-pink-600 text-pink-600'
-                : 'border-transparent text-gray-500 hover:text-gray-800'
-            }`}
-          >
-            <FolderTree className="w-4 h-4" /> Categorías ({categoriesList.length})
-          </button>
+          {hasPerm('categories:manage') && (
+            <button
+              onClick={() => setActiveTab('categories')}
+              className={`pb-3 font-bold text-sm border-b-2 transition flex items-center gap-2 whitespace-nowrap ${
+                activeTab === 'categories'
+                  ? 'border-pink-600 text-pink-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-800'
+              }`}
+            >
+              <FolderTree className="w-4 h-4" /> Categorías ({categoriesList.length})
+            </button>
+          )}
 
-          <button
-            onClick={() => setActiveTab('roles')}
-            className={`pb-3 font-bold text-sm border-b-2 transition flex items-center gap-2 whitespace-nowrap ${
-              activeTab === 'roles'
-                ? 'border-pink-600 text-pink-600'
-                : 'border-transparent text-gray-500 hover:text-gray-800'
-            }`}
-          >
-            <KeyRound className="w-4 h-4" /> Roles y Permisos ({roles.length})
-          </button>
+          {hasPerm('roles:manage') && (
+            <button
+              onClick={() => setActiveTab('roles')}
+              className={`pb-3 font-bold text-sm border-b-2 transition flex items-center gap-2 whitespace-nowrap ${
+                activeTab === 'roles'
+                  ? 'border-pink-600 text-pink-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-800'
+              }`}
+            >
+              <KeyRound className="w-4 h-4" /> Roles y Permisos ({roles.length})
+            </button>
+          )}
 
-          <button
-            onClick={() => {
-              if (!hasPerm('users:manage')) {
-                alert('⚠️ No tienes permisos para gestionar usuarios.');
-                return;
-              }
-              setActiveTab('users');
-              fetchSystemUsers();
-            }}
-            className={`pb-3 font-bold text-sm border-b-2 transition flex items-center gap-2 whitespace-nowrap ${
-              activeTab === 'users'
-                ? 'border-pink-600 text-pink-600'
-                : 'border-transparent text-gray-500 hover:text-gray-800'
-            }`}
-          >
-            <UsersIcon className="w-4 h-4" /> Usuarios
-            {!hasPerm('users:manage') && <Lock className="w-3 h-3 text-gray-400" />}
-          </button>
+          {hasPerm('users:manage') && (
+            <button
+              onClick={() => {
+                setActiveTab('users');
+                fetchSystemUsers();
+              }}
+              className={`pb-3 font-bold text-sm border-b-2 transition flex items-center gap-2 whitespace-nowrap ${
+                activeTab === 'users'
+                  ? 'border-pink-600 text-pink-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-800'
+              }`}
+            >
+              <UsersIcon className="w-4 h-4" /> Usuarios
+            </button>
+          )}
 
-          <button
-            onClick={() => {
-              if (!hasPerm('promos:manage')) {
-                alert('⚠️ No tienes permisos para gestionar promociones.');
-                return;
-              }
-              setActiveTab('promos');
-            }}
-            className={`pb-3 font-bold text-sm border-b-2 transition flex items-center gap-2 whitespace-nowrap ${
-              activeTab === 'promos'
-                ? 'border-pink-600 text-pink-600'
-                : 'border-transparent text-gray-500 hover:text-gray-800'
-            }`}
-          >
-            <Percent className="w-4 h-4" /> Promociones
-            {!hasPerm('promos:manage') && <Lock className="w-3 h-3 text-gray-400" />}
-          </button>
+          {hasPerm('promos:manage') && (
+            <button
+              onClick={() => setActiveTab('promos')}
+              className={`pb-3 font-bold text-sm border-b-2 transition flex items-center gap-2 whitespace-nowrap ${
+                activeTab === 'promos'
+                  ? 'border-pink-600 text-pink-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-800'
+              }`}
+            >
+              <Percent className="w-4 h-4" /> Promociones
+            </button>
+          )}
 
           <button
             onClick={() => setActiveTab('permissions')}
