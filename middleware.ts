@@ -44,11 +44,11 @@ export async function middleware(request: NextRequest) {
       return response;
     }
 
-    // Consultar el rol directamente en la tabla user_roles
+    // Consultar el rol directamente en la tabla user_roles por id (auth.uid())
     const { data: userRole } = await supabase
       .from('user_roles')
       .select('role')
-      .eq('email', user.email)
+      .eq('id', user.id)
       .single();
 
     const allowedRoles = ['admin', 'superadmin'];

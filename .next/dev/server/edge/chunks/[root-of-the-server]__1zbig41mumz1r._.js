@@ -55,8 +55,8 @@ async function middleware(request) {
             supabaseResponse.cookies.getAll().forEach((c)=>response.cookies.set(c.name, c.value));
             return response;
         }
-        // Consultar el rol directamente en la tabla user_roles
-        const { data: userRole } = await supabase.from('user_roles').select('role').eq('email', user.email).single();
+        // Consultar el rol directamente en la tabla user_roles por id (auth.uid())
+        const { data: userRole } = await supabase.from('user_roles').select('role').eq('id', user.id).single();
         const allowedRoles = [
             'admin',
             'superadmin'
