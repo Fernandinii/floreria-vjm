@@ -33,20 +33,43 @@ export async function middleware(request: NextRequest) {
 
   const pathname = request.nextUrl.pathname;
 
-  // Protect /admin routes except /admin/login
+  // Proteger rutas /admin (excepto /admin/login)
   if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
     if (!user) {
       const url = request.nextUrl.clone();
       url.pathname = '/admin/login';
-      return NextResponse.redirect(url);
+      const response = NextResponse.redirect(url);
+      // Propagar cookies en la redirección
+      supabaseResponse.cookies.getAll().forEach((c) => response.cookies.set(c.name, c.value));
+      return response;
+    }
+
+    // Consultar el rol directamente en la tabla user_roles
+    const { data: userRole } = await supabase
+      .from('user_roles')
+      .select('role')
+      .eq('email', user.email)
+      .single();
+
+    const allowedRoles = ['admin', 'superadmin'];
+
+    // Si el usuario no tiene rol permitido, rebotar al login
+    if (!userRole || !allowedRoles.includes(userRole.role)) {
+      const url = request.nextUrl.clone();
+      url.pathname = '/admin/login';
+      const response = NextResponse.redirect(url);
+      supabaseResponse.cookies.getAll().forEach((c) => response.cookies.set(c.name, c.value));
+      return response;
     }
   }
 
-  // If already logged in and visiting /admin/login, redirect to dashboard
+  // Si ya inició sesión y visita /admin/login, redirigir al dashboard
   if (pathname === '/admin/login' && user) {
     const url = request.nextUrl.clone();
     url.pathname = '/admin/dashboard';
-    return NextResponse.redirect(url);
+    const response = NextResponse.redirect(url);
+    supabaseResponse.cookies.getAll().forEach((c) => response.cookies.set(c.name, c.value));
+    return response;
   }
 
   return supabaseResponse;

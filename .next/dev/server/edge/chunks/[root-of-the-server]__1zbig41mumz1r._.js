@@ -45,19 +45,38 @@ async function middleware(request) {
     });
     const { data: { user } } = await supabase.auth.getUser();
     const pathname = request.nextUrl.pathname;
-    // Protect /admin routes except /admin/login
+    // Proteger rutas /admin (excepto /admin/login)
     if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
         if (!user) {
             const url = request.nextUrl.clone();
             url.pathname = '/admin/login';
-            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$spec$2d$extension$2f$response$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(url);
+            const response = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$spec$2d$extension$2f$response$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(url);
+            // Propagar cookies en la redirección
+            supabaseResponse.cookies.getAll().forEach((c)=>response.cookies.set(c.name, c.value));
+            return response;
+        }
+        // Consultar el rol directamente en la tabla user_roles
+        const { data: userRole } = await supabase.from('user_roles').select('role').eq('email', user.email).single();
+        const allowedRoles = [
+            'admin',
+            'superadmin'
+        ];
+        // Si el usuario no tiene rol permitido, rebotar al login
+        if (!userRole || !allowedRoles.includes(userRole.role)) {
+            const url = request.nextUrl.clone();
+            url.pathname = '/admin/login';
+            const response = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$spec$2d$extension$2f$response$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(url);
+            supabaseResponse.cookies.getAll().forEach((c)=>response.cookies.set(c.name, c.value));
+            return response;
         }
     }
-    // If already logged in and visiting /admin/login, redirect to dashboard
+    // Si ya inició sesión y visita /admin/login, redirigir al dashboard
     if (pathname === '/admin/login' && user) {
         const url = request.nextUrl.clone();
         url.pathname = '/admin/dashboard';
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$spec$2d$extension$2f$response$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(url);
+        const response = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$spec$2d$extension$2f$response$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(url);
+        supabaseResponse.cookies.getAll().forEach((c)=>response.cookies.set(c.name, c.value));
+        return response;
     }
     return supabaseResponse;
 }
