@@ -1,0 +1,39 @@
+#1:"$Sreact.fragment"
+2:"/_next/static/chunks/1tq6ppe__m8m-.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+a:I[47257,["$2"],"ClientPageRoot"]
+b:"/_next/static/chunks/25030ne99lqio.js"
+c:"/_next/static/chunks/2om5hp0u8_4n3.js"
+d:I[1182,["$2","$b","$c"],"default"]
+e:I[97367,["$2"],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:"ViewportBoundary"
+12:I[97367,["$2"],"$11"]
+14:"MetadataBoundary"
+15:I[97367,["$2"],"$14"]
+18:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2pvq4c74brv6j.css","style"]
+:HL["/_next/static/media/07a39a8a4660cc7c-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/605ce01b664af129-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+5:X
+7:X
+9:[["children",{"s":"__PAGE__","h":514,"d":{"r":["$","$1","c",{"children":[["$","$La",null,{"Component":"$d","serverProvidedParams":null}],[["$","script","script-0",{"src":"/_next/static/chunks/25030ne99lqio.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/2om5hp0u8_4n3.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":true,"v":"$7"}}]]
+8:[["children",{"s":"login","h":514,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":true,"v":"$7"},"c":"$Q9"}]]
+6:[["children",{"s":"admin","h":514,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":true,"v":"$7"},"c":"$Q8"}]]
+17:X
+19:X
+1a:X
+0:{"P":null,"c":["","admin","login"],"q":"","i":false,"t":{"t":{"s":"","h":530,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2pvq4c74brv6j.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/1tq6ppe__m8m-.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"es","className":"T19VSG_variable _8Li5zG_variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],"p":true,"v":"$5"},"c":"$Q6"},"h":{"r":["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","$L15",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$f",null,{"name":"Next.Metadata","children":"$L16"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":true,"v":"$17"}},"m":"$undefined","G":["$18",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2pvq4c74brv6j.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$19","s":"$1a","a":"$@1b","l":"$undefined","p":"$undefined","d":"$undefined","b":"ptjGg_P40bMf49ZdZDkLp","u":"$@1c"}
+7:C
+1a:300
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1d:I[27201,["$2"],"IconMark"]
+10:null
+16:[["$","title","0",{"children":"Florería VJM | Ramos y Arreglos Florales en Villahermosa, Tabasco"}],["$","meta","1",{"name":"description","content":"Envía flores frescas, ramos buchones, rosas y arreglos florales en Villahermosa, Tabasco. Pedidos rápidos y seguros por WhatsApp. ¡Sorprende hoy!"}],["$","meta","2",{"name":"keywords","content":"Florería en Villahermosa,Ramos buchones Tabasco,Arreglos florales Villahermosa,Flores a domicilio Villahermosa,Florería VJM"}],["$","meta","3",{"property":"og:title","content":"Florería VJM | Ramos y Arreglos Florales en Villahermosa"}],["$","meta","4",{"property":"og:description","content":"Diseños florales únicos y ramos frescos con envío a domicilio en Villahermosa, Tabasco. ¡Haz tu pedido fácil y rápido!"}],["$","meta","5",{"property":"og:url","content":"https://floreria-vjm.vercel.app"}],["$","meta","6",{"property":"og:site_name","content":"Florería VJM"}],["$","meta","7",{"property":"og:locale","content":"es_MX"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Florería VJM | Ramos y Arreglos Florales en Villahermosa"}],["$","meta","11",{"name":"twitter:description","content":"Envía flores frescas y arreglos florales en Villahermosa, Tabasco."}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","$L1d","13",{}]]
+1a:C
+17:C
+19:C
+5:C
+1c:false
+1b:null

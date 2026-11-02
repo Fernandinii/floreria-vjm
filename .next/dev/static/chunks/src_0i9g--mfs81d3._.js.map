@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/floreria-vjm/src/lib/supabase.ts"],"sourcesContent":["import { createClient } from '@supabase/supabase-js';\n\nconst supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;\nconst supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;\n\nexport const supabase = createClient(supabaseUrl, supabaseAnonKey);\n\nexport interface Product {\n  id: string;\n  name: string;\n  price: number;\n  image_url: string | null;\n  category: string;\n  is_available: boolean;\n  is_customizable?: boolean;\n  description?: string;\n  includes_shipping?: boolean;\n  preparation_time?: string;\n}\n\nexport const CATEGORIES = [\n  \"Ramos\",\n  \"Cajas y Arreglos\",\n  \"Peluches y Globos\",\n  \"Condolencias\"\n] as const;\n"],"names":["supabaseUrl","supabaseAnonKey","supabase","CATEGORIES"],"mappings":";;;;;;AAEoB;AAFpB;;AAEA,MAAMA;AACN,MAAMC;AAEC,MAAMC,WAAW,IAAA,iMAAY,EAACF,aAAaC;AAe3C,MAAME,aAAa;IACxB;IACA;IACA;IACA;CACD"}}]
+}

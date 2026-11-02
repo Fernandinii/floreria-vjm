@@ -1,0 +1,380 @@
+[
+  {
+    "name": "servicio tematica patron",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Tulipán ",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Negro",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Blanco",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Gerberas",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Rosa",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Girasol",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Amarillo",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "hortensias",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Azul",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Gardenias",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Lilis",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Cajas",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Adicional Y Accesorios",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Graduación",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Peluches",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Desayunos Sorpresa",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "jarrones y flores",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Gypsofia",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Globos (colores a elegir)",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Mama Eterna",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "papá",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "bodas y novia",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "recuerdos",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Anime Y Películas",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Billetes",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Dulces",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Margaritas",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Morado",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Ramo eterno De Liston",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "20 Rosas",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Hot Wheels",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "San Valentín",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "Todos los artículos",
+    "price": 0,
+    "image_url": "",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 1,500.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 800.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 500.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 680.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 380.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 1,800.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 3,350.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 1,600.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 660.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 500.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 380.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 1,500.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 800.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 500.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 650.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 600.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 880.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 1,200.00 MXN 1,880.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 380.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  },
+  {
+    "name": "MXN 400.00",
+    "price": 0,
+    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "category": "General",
+    "is_available": true
+  }
+]
