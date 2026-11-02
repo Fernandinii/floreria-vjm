@@ -28,8 +28,7 @@ export default function AdminLoginPage() {
         setError(error.message === 'Invalid login credentials' ? 'Correo o contraseña incorrectos' : error.message);
         setLoading(false);
       } else {
-        router.push('/admin/dashboard');
-        router.refresh();
+        window.location.href = '/admin/dashboard';
       }
     } catch (err: any) {
       setError(err?.message || 'Error de conexión. Inténtalo de nuevo.');

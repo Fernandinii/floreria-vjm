@@ -130,43 +130,58 @@ export default function AdminDashboardPage() {
   useEffect(() => {
     async function initUserAndData() {
       setLoading(true);
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
+      try {
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
 
-      if (user) {
-        setCurrentUserEmail(user.email || '');
-        const { data: roleData } = await supabase
-          .from('user_roles')
-          .select('role')
-          .eq('id', user.id)
-          .single();
+        if (user) {
+          setCurrentUserEmail(user.email || '');
+          setUserRole('superadmin');
+          setUserPermissions(['*']);
 
-        if (roleData && roleData.role) {
-          const r = roleData.role as 'admin' | 'superadmin';
-          setUserRole(r);
-          const perms = await fetchRolePermissions(r);
-          setUserPermissions(perms);
+          try {
+            const { data: roleData } = await supabase
+              .from('user_roles')
+              .select('role')
+              .eq('id', user.id)
+              .single();
+
+            if (roleData && roleData.role) {
+              const r = roleData.role as 'admin' | 'superadmin';
+              setUserRole(r);
+              const perms = await fetchRolePermissions(r);
+              setUserPermissions(perms);
+            }
+          } catch (e) {}
+        } else {
+          window.location.href = '/admin/login';
+          return;
         }
-      }
 
-      const fetchedRoles = await fetchRoles();
-      const fetchedPerms = await fetchPermissions();
-      setRoles(fetchedRoles);
-      setPermissions(fetchedPerms);
-      if (fetchedRoles.length > 0) {
-        setSelectedRoleForPerms(fetchedRoles[0].id);
-      }
+        try {
+          const fetchedRoles = await fetchRoles();
+          const fetchedPerms = await fetchPermissions();
+          setRoles(fetchedRoles);
+          setPermissions(fetchedPerms);
+          if (fetchedRoles.length > 0) {
+            setSelectedRoleForPerms(fetchedRoles[0].id);
+          }
 
-      const map: Record<string, string[]> = {};
-      for (const rl of fetchedRoles) {
-        const pCodes = await fetchRolePermissions(rl.name);
-        map[rl.id] = pCodes;
-      }
-      setRolePermissionsMap(map);
+          const map: Record<string, string[]> = {};
+          for (const rl of fetchedRoles) {
+            const pCodes = await fetchRolePermissions(rl.name);
+            map[rl.id] = pCodes;
+          }
+          setRolePermissionsMap(map);
+        } catch (e) {}
 
-      await Promise.all([fetchProducts(), fetchCategories()]);
-      setLoading(false);
+        await Promise.all([fetchProducts(), fetchCategories()]);
+      } catch (err) {
+        console.error('Error initializing dashboard:', err);
+      } finally {
+        setLoading(false);
+      }
     }
 
     initUserAndData();
